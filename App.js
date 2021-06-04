@@ -1,15 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Slider from './src/Component/Slider/Slider.js'
 
-export default function App() {
+const App =()=>{
   return (
-    <View style={styles.container}>
-      <Text>yoyoyoyoyoyooyoyooyo</Text>
-      <StatusBar style="auto" />
-    </View>
+    // <View style={styles.container}>
+    //   <Text>yoyoyoyoyoyooyoyooyo</Text>
+    //   <StatusBar style="auto" />
+     
+    // </View>
+    <Slider/>
   );
 }
+
+export default App
 
 const styles = StyleSheet.create({
   container: {
