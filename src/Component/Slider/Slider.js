@@ -7,13 +7,15 @@ const height = width * .6
  const images=[
      'https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?cs=srgb&dl=pexels-pixabay-40568.jpg&fm=jpg',
      'https://images.pexels.com/photos/4210606/pexels-photo-4210606.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-     'https://images.pexels.com/photos/4210561/pexels-photo-4210561.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
+     'https://images.pexels.com/photos/4210561/pexels-photo-4210561.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+     'https://images.pexels.com/photos/6075012/pexels-photo-6075012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+     'https://images.pexels.com/photos/6074923/pexels-photo-6074923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
  ]
 
 const Slider = () => {
    
   return (
-    <View style={{marginTop:50}}>
+    <View style={{marginTop:20}}>
       <ScrollView 
       pagingEnabled 
       horizontal 
@@ -22,6 +24,7 @@ const Slider = () => {
       {
           images.map((image,index)=>(
               <Image 
+              key={index}
       source={{uri:image}}
       style={{height, width,resizeMode:'cover'}}/>
           ))
